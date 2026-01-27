@@ -1,64 +1,166 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
 <head>
-  <meta charset="utf-8">
-  <title>Dr. Ehsan Mohammadi – official entity hub</title>
-  <meta name="description" content="Official entity hub for Dr. Ehsan Mohammadi, connecting his English and Persian websites and the Hi Da Research Lab.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Dr. Ehsan Mohammadi | Official entity hub</title>
+  <meta name="description" content="Official entity hub for Dr. Ehsan Mohammadi. Verified links to the official website, Hi Da Research Lab, and key scholarly identity profiles in English and Persian." />
+  <meta name="author" content="Dr. Ehsan Mohammadi" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="googlebot" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#0b1220" />
 
   <!-- Google Search Console verification -->
   <meta name="google-site-verification" content="7iFNKrNU4f2u0ZScpaDH6ABWvz2hdxk-zyspOPpx-NI" />
 
-  <!-- Declare the main site as canonical for this content -->
-  <link rel="canonical" href="https://www.ehsanmohammadi.com/" />
+  <!-- Canonical: update the path if this page lives somewhere else -->
+  <link rel="canonical" href="https://ehsanmohammadi.com/ehsanmohammadi-entity-home/" />
+
+  <!-- Optional: if you have EN/FA versions of this same page, keep these. Otherwise remove. -->
+  <link rel="alternate" href="https://ehsanmohammadi.com/ehsanmohammadi-entity-home/" hreflang="en" />
+  <link rel="alternate" href="https://ehsanmohammadi.com/ehsanmohammadi-entity-home/" hreflang="fa" />
+  <link rel="alternate" href="https://ehsanmohammadi.com/ehsanmohammadi-entity-home/" hreflang="x-default" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Dr. Ehsan Mohammadi" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dr. Ehsan Mohammadi | Official entity hub" />
+  <meta property="og:description" content="Official entity hub for Dr. Ehsan Mohammadi. Verified links to official websites, lab, and scholarly identity profiles." />
+  <meta property="og:url" content="https://ehsanmohammadi.com/ehsanmohammadi-entity-home/" />
+  <meta property="og:image" content="https://ehsanmohammadi.com/assets/images/Ehsan%20Mohammadi-Main%20Profile.jpg" />
+  <meta property="og:image:alt" content="Portrait of Dr. Ehsan Mohammadi" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dr. Ehsan Mohammadi | Official entity hub" />
+  <meta name="twitter:description" content="Official links to Dr. Ehsan Mohammadi’s websites, research lab, and scholarly identity profiles." />
+  <meta name="twitter:image" content="https://ehsanmohammadi.com/assets/images/Ehsan%20Mohammadi-Main%20Profile.jpg" />
+  <meta name="twitter:image:alt" content="Portrait of Dr. Ehsan Mohammadi" />
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0b1220;
+      --muted:rgba(11,18,32,.72);
+      --border:rgba(11,18,32,.14);
+      --card:#f7f8fb;
+      --accent:#1f4fd6;
+      --radius:14px;
+      --max: 940px;
+      --sans: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:var(--sans);
+      line-height:1.6;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline; text-underline-offset:3px}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 40px}
+    header{padding:10px 0 14px; border-bottom:1px solid var(--border)}
+    h1{margin:0; font-size:28px; letter-spacing:-.02em}
+    .sub{margin:10px 0 0; color:var(--muted); max-width:72ch}
+    .grid{display:grid; gap:14px; margin-top:18px}
+    @media (min-width:860px){ .grid{grid-template-columns:1.2fr .8fr} }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:16px;
+    }
+    .card h2{margin:0 0 10px; font-size:16px}
+    ul{margin:0; padding-left:18px}
+    li{margin:8px 0}
+    .hero{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      margin-top:14px;
+      padding:14px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+    }
+    .hero img{
+      width:88px;
+      height:88px;
+      border-radius:999px;
+      object-fit:cover;
+      border:1px solid var(--border);
+      flex:0 0 auto;
+    }
+    .hero b{display:block; font-size:16px}
+    .hero small{color:var(--muted)}
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#fff;
+      color:var(--text);
+      font-size:12.5px;
+      font-weight:600;
+    }
+    .rtl{direction:rtl; text-align:right}
+    footer{margin-top:18px; color:var(--muted); font-size:12.5px}
+    .small{font-size:12.5px; color:var(--muted)}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+  </style>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://ehsanmohammadi.com/#website",
+        "url": "https://ehsanmohammadi.com/",
+        "name": "Dr. Ehsan Mohammadi",
+        "inLanguage": ["en","fa"],
+        "publisher": { "@id": "https://ehsanmohammadi.com/#person" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://ehsanmohammadi.com/ehsanmohammadi-entity-home/#webpage",
+        "url": "https://ehsanmohammadi.com/ehsanmohammadi-entity-home/",
+        "name": "Dr. Ehsan Mohammadi official entity hub",
+        "description": "Official entity hub for Dr. Ehsan Mohammadi, connecting official websites, lab, and scholarly identity profiles in English and Persian.",
+        "isPartOf": { "@id": "https://ehsanmohammadi.com/#website" },
+        "about": { "@id": "https://ehsanmohammadi.com/#person" },
+        "mainEntity": { "@id": "https://ehsanmohammadi.com/#person" },
+        "primaryImageOfPage": { "@id": "https://ehsanmohammadi.com/#img-main-profile" },
+        "inLanguage": ["en","fa"]
+      },
+
+      {
         "@type": "Person",
-        "@id": "https://www.ehsanmohammadi.com/#person",
+        "@id": "https://ehsanmohammadi.com/#person",
         "name": [
-          {
-            "@value": "Dr. Ehsan Mohammadi",
-            "@language": "en"
-          },
-          {
-            "@value": "احسان محمدی",
-            "@language": "fa"
-          }
+          { "@value": "Dr. Ehsan Mohammadi", "@language": "en" },
+          { "@value": "احسان محمدی", "@language": "fa" }
         ],
-        "alternateName": [
-          "Ehsan Mohammadi",
-          "دکتر احسان محمدی"
-        ],
+        "alternateName": ["Ehsan Mohammadi","دکتر احسان محمدی"],
+        "url": "https://ehsanmohammadi.com/",
         "image": [
-          "https://www.ehsanmohammadi.com/profile-image1-ehsan-mohammadi",
-          "https://www.ehsanmohammadi.com/profile-image2-ehsan-mohammadi",
-          "https://www.ehsanmohammadi.com/profile-image3-ehsan-mohammadi",
-          "https://www.ehsanmohammadi.com/profile-image-4-ehsan-mohammadi"
+          "https://ehsanmohammadi.com/assets/images/Ehsan%20Mohammadi-Main%20Profile.jpg",
+          "https://ehsanmohammadi.com/assets/images/Ehsan%20Mohammadi-Profile%201.png",
+          "https://ehsanmohammadi.com/assets/images/Ehsan%20Mohammadi-Profile%202.jpg",
+          "https://ehsanmohammadi.com/assets/images/Ehsan%20Mohammadi-Profile%203.jpg",
+          "https://ehsanmohammadi.com/assets/images/Ehsan%20Mohammadi-Profile%204.jpg"
         ],
-        "url": "https://www.ehsanmohammadi.com/",
-        "description": [
-          {
-            "@value": "Associate Professor and PhD Program Coordinator in the School of Information Science at the University of South Carolina and Director of the Hi Da Research Lab. His research focuses on health informatics, social media analytics, misinformation, scientometrics, and AI literacy.",
-            "@language": "en"
-          },
-          {
-            "@value": "استاد دانشیار و مدیر برنامه دکتری در دانشکده علم اطلاعات در دانشگاه کارولینای جنوبی و مدیر گروه پژوهشی Hi Da با تمرکز پژوهشی بر انفورماتیک پزشکی و سلامت، تحلیل رسانه‌های اجتماعی، خطا و اطلاعات نادرست در اینترنت، علم و اجتماع، کاربرد هوش مصنوعی و سواد هوش مصنوعی.",
-            "@language": "fa"
-          }
-        ],
-        "jobTitle": [
-          "Associate Professor",
-          "PhD Program Coordinator",
-          "Director, Hi Da Research Lab"
-        ],
+        "jobTitle": ["Associate Professor","PhD Program Director","Director, Hi Da Research Lab"],
         "worksFor": {
           "@type": "CollegeOrUniversity",
           "name": "University of South Carolina",
-          "sameAs": "https://www.sc.edu/"
+          "url": "https://sc.edu/"
         },
         "affiliation": [
           {
@@ -66,242 +168,161 @@
             "name": "School of Information Science, College of Information and Communications, University of South Carolina",
             "url": "https://sc.edu/study/colleges_schools/cic/schools/information_science/"
           },
-          {
-            "@id": "https://www.hidalab.org/#organization"
-          }
+          { "@id": "https://hidalab.org/#organization" }
         ],
-        "knowsLanguage": [
-          "en",
-          "fa"
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "University of Wolverhampton", "url": "https://www.wlv.ac.uk/" },
+          { "@type": "CollegeOrUniversity", "name": "University of Isfahan", "url": "https://ui.ac.ir/en" }
         ],
+        "knowsLanguage": ["en","fa"],
         "identifier": [
-          {
-            "@type": "PropertyValue",
-            "propertyID": "wikidata",
-            "value": "Q57911399"
-          },
-          {
-            "@type": "PropertyValue",
-            "propertyID": "orcid",
-            "value": "0000-0003-3481-6991"
-          },
-          {
-            "@type": "PropertyValue",
-            "propertyID": "google-kgmid",
-            "value": "/g/11h0lbv6r8"
-          }
+          { "@type": "PropertyValue", "propertyID": "wikidata", "value": "Q57911399" },
+          { "@type": "PropertyValue", "propertyID": "orcid", "value": "0000-0003-3481-6991" },
+          { "@type": "PropertyValue", "propertyID": "google-kgmid", "value": "/g/11h0lbv6r8" }
         ],
         "sameAs": [
           "https://www.wikidata.org/wiki/Q57911399",
           "https://orcid.org/0000-0003-3481-6991",
-          "https://scholar.google.com/citations?hl=en&user=ddrRUEMAAAAJ&view_op=list_works&sortby=pubdate",
+          "https://scholar.google.com/citations?hl=en&user=ddrRUEMAAAAJ",
           "https://sc.edu/study/colleges_schools/cic/faculty-staff/mohammadi_ehsan.php",
           "https://loop.frontiersin.org/people/298289/overview",
           "https://sc.academia.edu/EhsanMohammadi",
           "https://www.researchgate.net/profile/Ehsan-Mohammadi-8",
-          "https://www.hidalab.org/",
-    "https://www.google.com/search?kgmid=/g/11h0lbv6r8&q=Ehsan+Mohammadi",
-    "https://www.google.com/search?kgmid=/g/11h0lbv6r8&hl=fa&q=احسان+محمدی"
+          "https://hidalab.org/",
+          "https://www.google.com/search?kgmid=/g/11h0lbv6r8&q=Ehsan+Mohammadi",
+          "https://www.google.com/search?kgmid=/g/11h0lbv6r8&hl=fa&q=احسان+محمدی",
+          "https://share.google/FdRCJDqLgMwkRg1TY"
         ],
         "subjectOf": [
           {
-            "@id": "https://sites.google.com/site/altmetric/awards#website"
+            "@type": "WebSite",
+            "@id": "https://sites.google.com/site/altmetric/awards#website",
+            "url": "https://sites.google.com/site/altmetric/awards",
+            "name": "Ehsan Mohammadi old website"
           },
-          {
-            "@type": "WebPage",
-            "@id": "https://ehsannu.github.io/ehsanmohammadi-entity-home/#entity-page",
-            "url": "https://ehsannu.github.io/ehsanmohammadi-entity-home/",
-            "name": "Entity hub for Dr. Ehsan Mohammadi",
-            "inLanguage": "en",
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "@id": "https://www.ehsanmohammadi.com/#profile-image1"
-            },
-            "mainEntity": {
-              "@id": "https://www.ehsanmohammadi.com/#person"
-            }
-          }
+          { "@id": "https://ehsanmohammadi.com/ehsanmohammadi-entity-home/#webpage" }
         ]
       },
+
       {
         "@type": "Organization",
-        "@id": "https://www.hidalab.org/#organization",
+        "@id": "https://hidalab.org/#organization",
         "name": "Hi Da Research Lab",
-        "alternateName": [
-          "Hi Da Lab",
-          "HiDa Lab",
-          "Hi Da"
-        ],
-        "url": "https://www.hidalab.org/",
-        "identifier": {
-          "@type": "PropertyValue",
-          "propertyID": "wikidata",
-          "value": "Q134366401"
-        },
-        "sameAs": [
-          "https://www.wikidata.org/wiki/Q134366401"
-        ],
-        "founder": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
+        "alternateName": ["Hi Da Lab","HiDa Lab","Hi Da"],
+        "url": "https://hidalab.org/",
+        "identifier": { "@type": "PropertyValue", "propertyID": "wikidata", "value": "Q134366401" },
+        "sameAs": ["https://www.wikidata.org/wiki/Q134366401"],
+        "founder": { "@id": "https://ehsanmohammadi.com/#person" }
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://www.ehsanmohammadi.com/#website",
-        "url": "https://www.ehsanmohammadi.com/",
-        "name": [
-          {
-            "@value": "Dr. Ehsan Mohammadi official website",
-            "@language": "en"
-          },
-          {
-            "@value": "وب‌سایت رسمی دکتر احسان محمدی",
-            "@language": "fa"
-          }
-        ],
-        "inLanguage": [
-          "en",
-          "fa"
-        ],
-        "publisher": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        },
-        "hasPart": [
-          {
-            "@id": "https://www.ehsanmohammadi.com/#homepage"
-          },
-          {
-            "@id": "https://www.ehsanmohammadi.com/persian/#webpage-fa"
-          },
-          {
-            "@id": "https://www.ehsanmohammadi.com/resaerch-in-farsi/#webpage-fa-research"
-          }
-        ]
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.ehsanmohammadi.com/#homepage",
-        "url": "https://www.ehsanmohammadi.com/",
-        "name": "Welcome - Dr. Ehsan Mohammadi",
-        "inLanguage": "en",
-        "isPartOf": {
-          "@id": "https://www.ehsanmohammadi.com/#website"
-        },
-        "about": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.ehsanmohammadi.com/persian/#webpage-fa",
-        "url": "https://www.ehsanmohammadi.com/persian",
-        "name": "احسان محمدی - معرفی و فعالیت‌های علمی",
-        "inLanguage": "fa",
-        "isPartOf": {
-          "@id": "https://www.ehsanmohammadi.com/#website"
-        },
-        "about": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.ehsanmohammadi.com/resaerch-in-farsi/#webpage-fa-research",
-        "url": "https://www.ehsanmohammadi.com/resaerch-in-farsi",
-        "name": "پژوهش‌های علمی دکتر احسان محمدی به زبان فارسی",
-        "inLanguage": "fa",
-        "isPartOf": {
-          "@id": "https://www.ehsanmohammadi.com/#website"
-        },
-        "about": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://sites.google.com/site/altmetric/awards#website",
-        "url": "https://sites.google.com/site/altmetric/awards",
-        "name": "Ehsan Mohammadi old website",
-        "inLanguage": "en",
-        "about": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
-      },
+
       {
         "@type": "ImageObject",
-        "@id": "https://www.ehsanmohammadi.com/#profile-image1",
-        "url": "https://www.ehsanmohammadi.com/profile-image1-ehsan-mohammadi",
+        "@id": "https://ehsanmohammadi.com/#img-main-profile",
+        "contentUrl": "https://ehsanmohammadi.com/assets/images/Ehsan%20Mohammadi-Main%20Profile.jpg",
+        "encodingFormat": "image/jpeg",
+        "name": "Portrait of Dr. Ehsan Mohammadi",
         "caption": "Portrait of Dr. Ehsan Mohammadi",
-        "creator": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https://www.ehsanmohammadi.com/#profile-image2",
-        "url": "https://www.ehsanmohammadi.com/profile-image2-ehsan-mohammadi",
-        "caption": "Dr. Ehsan Mohammadi – profile image 2",
-        "creator": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https://www.ehsanmohammadi.com/#profile-image3",
-        "url": "https://www.ehsanmohammadi.com/profile-image3-ehsan-mohammadi",
-        "caption": "Dr. Ehsan Mohammadi – profile image 3",
-        "creator": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https://www.ehsanmohammadi.com/#profile-image4",
-        "url": "https://www.ehsanmohammadi.com/profile-image-4-ehsan-mohammadi",
-        "caption": "Dr. Ehsan Mohammadi – profile image 4",
-        "creator": {
-          "@id": "https://www.ehsanmohammadi.com/#person"
-        }
+        "creator": { "@id": "https://ehsanmohammadi.com/#person" },
+        "representativeOfPage": true
       }
     ]
   }
   </script>
 </head>
+
 <body>
-  <h1>Dr. Ehsan Mohammadi</h1>
+  <div class="wrap">
+    <header>
+      <h1>Dr. Ehsan Mohammadi</h1>
+      <p class="sub">
+        Official entity hub with verified links to the primary website, the Hi Da Research Lab, and scholarly identity profiles.
+        This page helps search engines and users distinguish official sources from unofficial or outdated pages.
+      </p>
 
-  <p>
-    This page is the official entity hub for
-    <strong>Dr. Ehsan Mohammadi</strong>, Associate Professor and PhD Program
-    Coordinator in the School of Information Science at the University of
-    South Carolina, and Director of the <strong>Hi Da Research Lab (HiDa)</strong>.
-  </p>
+      <div class="hero" aria-label="Profile preview">
+        <img src="/assets/images/Ehsan%20Mohammadi-Main%20Profile.jpg" alt="Portrait of Dr. Ehsan Mohammadi" width="88" height="88" loading="eager" decoding="async" />
+        <div>
+          <b>Dr. Ehsan Mohammadi</b>
+          <small>Associate Professor, University of South Carolina · Director, Hi Da Research Lab</small>
 
-  <h2>Official websites (English)</h2>
-  <ul>
-    <li><a href="https://www.ehsanmohammadi.com/">Personal site (English)</a></li>
-    <li><a href="https://www.hidalab.org/">Hi Da Research Lab</a></li>
-  </ul>
+          <div class="pillrow" aria-label="Quick links">
+            <a class="pill" href="https://ehsanmohammadi.com/">Official website</a>
+            <a class="pill" href="https://hidalab.org/">Hi Da Research Lab</a>
+            <a class="pill" href="https://scholar.google.com/citations?hl=en&user=ddrRUEMAAAAJ">Google Scholar</a>
+            <a class="pill" href="https://orcid.org/0000-0003-3481-6991">ORCID</a>
+            <a class="pill" href="https://www.wikidata.org/wiki/Q57911399">Wikidata</a>
+            <a class="pill" href="https://share.google/FdRCJDqLgMwkRg1TY" target="_blank" rel="noopener noreferrer">Google Knowledge Graph</a>
+          </div>
 
-  <h2>وب‌سایت‌ها و صفحات فارسی</h2>
-  <ul>
-    <li><a href="https://www.ehsanmohammadi.com/persian">صفحه معرفی و بیوگرافی احسان محمدی به زبان فارسی</a></li>
-    <li><a href="https://www.ehsanmohammadi.com/resaerch-in-farsi">پژوهش‌های دکتر احسان محمدی به زبان فارسی</a></li>
-  </ul>
+          <div class="small" style="margin-top:10px;">
+            Canonical domain: <span class="mono">https://ehsanmohammadi.com/</span>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<h2>نمایه من در گوگل</h2>
-  <p>
-    اگر نام من را در گوگل جستجو می‌کنید، می‌توانید نمایه دانش (Knowledge Panel) من را در گوگل با کلیک روی لینک زیر ببینید:
-  </p>
-  <p>
-    <a href="https://www.google.com/search?kgmid=/g/11h0lbv6r8&hl=fa&q=احسان+محمدی" target="_blank" rel="noopener">
-      نمایش نمایه من در گوگل
-    </a>
-  </p>
-  
-  <h2>old website / old site</h2>
-  <ul>
-    <li><a href="https://sites.google.com/site/altmetric/awards"> Ehsan Mohammadi's old website (old site)</a></li>
-  </ul>
+    <section class="grid" aria-label="Official link sections">
+      <div class="card">
+        <h2>Official websites (English)</h2>
+        <ul>
+          <li><a href="https://ehsanmohammadi.com/">Personal site (English)</a></li>
+          <li><a href="https://hidalab.org/">Hi Da Research Lab</a></li>
+          <li><a href="https://sc.edu/study/colleges_schools/cic/faculty-staff/mohammadi_ehsan.php">University profile (USC)</a></li>
+        </ul>
+
+        <h2 style="margin-top:14px;">Scholarly identity profiles</h2>
+        <ul>
+          <li><a href="https://orcid.org/0000-0003-3481-6991">ORCID</a></li>
+          <li><a href="https://www.wikidata.org/wiki/Q57911399">Wikidata</a></li>
+          <li><a href="https://scholar.google.com/citations?hl=en&user=ddrRUEMAAAAJ">Google Scholar</a></li>
+          <li><a href="https://loop.frontiersin.org/people/298289/overview">Frontiers Loop</a></li>
+          <li><a href="https://sc.academia.edu/EhsanMohammadi">Academia.edu</a></li>
+          <li><a href="https://www.researchgate.net/profile/Ehsan-Mohammadi-8">ResearchGate</a></li>
+          <li><a href="https://share.google/FdRCJDqLgMwkRg1TY" target="_blank" rel="noopener noreferrer">Google Knowledge Graph</a></li>
+        </ul>
+      </div>
+
+      <div class="card rtl" lang="fa">
+        <h2>وب‌سایت‌ها و صفحات فارسی</h2>
+        <ul>
+          <li><a href="https://ehsanmohammadi.com/persian">صفحه معرفی و بیوگرافی احسان محمدی</a></li>
+          <li><a href="https://ehsanmohammadi.com/resaerch-in-farsi">پژوهش‌های دکتر احسان محمدی به زبان فارسی</a></li>
+        </ul>
+
+        <h2 style="margin-top:14px;">نمایه دانش من در گوگل</h2>
+        <p style="margin:0 0 10px; color:rgba(11,18,32,.72);">
+          برای مشاهده Knowledge Panel در گوگل، از لینک زیر استفاده کنید:
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.google.com/search?kgmid=/g/11h0lbv6r8&hl=fa&q=احسان+محمدی" target="_blank" rel="noopener noreferrer">
+              نمایش نمایه من در گوگل
+            </a>
+          </li>
+          <li>
+            <a href="https://share.google/FdRCJDqLgMwkRg1TY" target="_blank" rel="noopener noreferrer">
+              لینک رسمی Google Knowledge Graph
+            </a>
+          </li>
+        </ul>
+
+        <h2 style="margin-top:14px;">سایت قدیمی</h2>
+        <ul>
+          <li><a href="https://sites.google.com/site/altmetric/awards">وب‌سایت قدیمی</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Dr. Ehsan Mohammadi
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
